@@ -1,0 +1,238 @@
+IMAGES
+
+SUMMARY:
+=> The <img> element is used to add images to a web page.
+=> You must always specify a src attribute to indicate the source of an image and an alt attribute to describe the content of an image.
+=> You should save images at the size you will be using them on the web page and in the appropriate format.
+=> Photographs are best saved as JPEGs; illustrations or logos that use flat colors are better saved as GIFs.
+
+KEYPOINTS:
+=> Include an image in your web pages using HTML.
+=> Pick which image format to use.
+=> Show an image at the right size.
+=> Optimize an image for use on the web to make pages load faster.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+CHOOSING IMAGES FOR YOUR SITE:
+=> Images can be used to set the tone for a site in less time than it takes to read a description. 
+=> If you do not have photographs to use on your website, there are companies who sell stock images; these are images you pay to use (there is a list of stock photography websites below).
+=> Remember that all images are subject to copyright, and you can get in trouble for simply taking photographs from another website.
+=> If you have a page that shows several images (such as product photographs or members of a team) then putting them on a simple, consistent background helps them look better as a group.
+
+IMAGES SHOULD...
+                  Be relevant
+                  Convey information
+                  Convey the right mood
+                  Be instantly recognisable
+                  Fit the color palette
+
+STOCK PHOTOS
+                  www.istockphoto.com
+                  www.gettyimages.com
+                  www.sxc.hu
+                  www.fotolia.com
+
+ONLINE EXTRA
+=> We have provided an online gallery that helps you choose the right image for your website.
+=> You can find it in the tools section of the site accompanying this book.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+STORING IMAGES ON YOUR SITE:
+=> As a website grows, keeping images in a separate folder helps you understand how the site is organized. Here you can see an example of the files for a website; all of the images are stored in a folder called images.
+=> On a big site you might like to add subfolders inside the images folder. For example, images such as logos and buttons might sit in a folder called interface, product photographs might sit in a page called products, and images related to news might live in a folder called news.
+=> If you are using a content management system or blogging platform, there are usually tools built into the admin site that allow you to upload images, and the program will probably already have a separate folder for image files and any other uploads.
+=> You can see Structure on Storing Images Structure.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ADDING IMAGES:
+=> <img> 
+=> To add an image into the page you need to use an <img> element. This is an empty element (which means there is no closing tag). It must carry the following two attributes:
+
+=> src
+=> This tells the browser where it can find the image file. This will usually be a relative URL pointing to an image on your own site. (Here you can see that the images are in a child folder called images — relative URLs were covered on pages 83-84).
+
+=> alt
+=> This provides a text description of the image which describes the image if you cannot see it.
+
+=> title
+=> You can also use the title attribute with the <img> element to provide additional information about the image. Most browsers will display the content of this attribute in a tootip when the user hovers over the image.
+
+NOTE:
+=> The text used in the alt attribute is often referred to as alt text. It should give an accurate description of the image content so it can be understood by screen reader software (used by people with visual impairments) and search engines.
+=> If the image is just to make a page look more attractive (and it has no meaning, such as a graphic dividing line), then the alt attribute should still be used but the quotes should be left empty.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HEIGHT & WIDTH OF IMAGES:
+=> You will also often see an <img> element use two other attributes that specify its size:
+
+=> height
+=> This specifies the height of the image in pixels.
+
+=> width
+=> This specifies the width of the image in pixels.
+
+=> Images often take longer to load than the HTML code that makes up the rest of the page. It is, therefore, a good idea to specify the size of the image so that the browser can render the rest of the text on the page while leaving the right amount of space for the image that is still loading.
+
+NOTE:The size of images is increasingly being specified using CSS rather than HTML — see pages 409- 410 for more information about this.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+WHERE TO PLACE IMAGES IN YOUR CODE:
+=> Where an image is placed in the code will affect how it is displayed. Here are three examples of image placement that produce different results:
+
+=> 1: BEFORE A PARAGRAPH
+=> The paragraph starts on a new line after the image.
+
+=> 2: INSIDE THE START OF A PARAGRAPH
+=> The first row of text aligns with the bottom of the image.
+
+=> 3: IN THE MIDDLE OF A PARAGRAPH
+=> The image is placed between the words of the paragraph that it appears in.
+
+IMPORTANT NOTE:
+=> Where you place the image in the code is important because browsers show HTML elements in one of two ways:
+
+=> BLOCK ELEMENTS ALWAYS APPEARS ON A NEW LINE: Examples of block elements include the <h1> and <p> elements. 
+=> If the <img> is followed by a block level element (such as a paragraph) then the block level element will sit on a new line after the imageas shown in the first example on this page.
+
+=> INLINE ELEMENTS SIT WITHIN A BLOCK LEVEL ELEMENT AND DO NOT START ON A NEW LINE: Examples of inline elements include the <b>, <em>, and <img> elements.
+=> If the <img> element is inside a block level element, any text or other inline elements will flow around the image as shown in the second and third examples on this page(bird.gif 2nd & 3rd exapmles).
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+OLD CODE: ALIGNING IMAGES HORIZONTALLY:
+=> align
+=> The align attribute was commonly used to indicate how the other parts of a page should flow around an image. It has been removed from HTML5 and new websites should use CSS to control the alignment of images (as you will see on pages 411-412).
+=> I have discussed it here because you are likely to come across it if you look at older code, and because some visual editors still insert this attribute when you indicate how an image should be aligned.
+=> The align attribute can take these horizontal values:
+
+=> left
+=> This aligns the image to the left (allowing text to flow around its right-hand side).
+
+=> right
+=> This aligns the image to the right (allowing text to flow around its left-hand side).
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+OLD CODE: ALIGNING IMAGES VERTIACLLY:
+=> As you saw on the last page, the align attribute is no longer used in HTML5, but it is covered here because you may see it used in older websites and it is still used in the code created by some visual editors.
+=> There are three values that the align attribute can take that control how the image should align vertically with the text that surrounds it:
+
+=> top
+=> This aligns the first line of the surrounding text with the top of the image.
+
+=> middle
+=> This aligns the first line of the surrounding text with the middle of the image.
+
+=> bottom
+=> This aligns the first line of the surrounding text with the bottom of the image.
+
+-------------------------------------------------------------------------------------------------------------------------------------------- 
+
+THREE RULES FOR CREATING IMAGES:
+=> There are three rules to remember when you are creating images for your website which are summarized below. We go into greater detail on each topic over the next nine pages:
+
+=> 1: SAVE IMAGES IN THE RIGHT FORMAT
+=> Websites mainly use images in jpeg, gif, or png format. If you choose the wrong image format then your image might not look as sharp as it should and can make the web page slower to load.
+
+=> 2: SAVE IMAGES AT THE RIGHT SIZE
+=> You should save the image at the same width and height it will appear on the website. If the image is smaller than the width or height that you have specified, the image can be distorted and stretched. If the image is larger than the width and height if you have specified, the image will take longer to display on the page.
+
+=> 3: USE THE CORRECT RESOLUTION
+=> Computer screens are made up of dots known as pixels. Images used on the web are also made up of tiny dots. Resolution refers to the number of dots per inch, and most computer screens only show web pages at 72 pixels per inch. So saving images at a higher resolution results in images that are larger than necessary and take longer to download.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+TOOLS TO EDIT AND SAVE IMAGES:
+=> There are several tools you can use to edit and save images to ensure that they are the right size, format, and resolution.
+=> The most popular tool amongst web professionals is Adobe Photoshop. (In fact, professional web designers often use this software to design entire sites.) The full version of Photoshop is expensive, but there is a cheaper version called Photoshop Elements which would suit the needs of most beginners.
+
+OTHER SOFTWARES...
+                  Pixelmator
+                  PaintShop Pro
+
+ONLINE EDITORS
+                  www.photoshop.com
+                  www.pixlr.com
+                  www.splashup.com
+
+ONLINE EXTRAS
+=> Watch videos that demonstrate how to resize images and save them in the correct format using both of these applications.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+IMAGE DIMENSIONS:
+=> The images you use on your website should be saved at the same width and height that you want them to appear on the page.
+
+=> For example, if you have designed a page to include an image that is 300 pixels wide by 150 pixels tall, the image you use should be 300 x 150 pixels. You may need to use image editing tools to resize and crop the image. When sourcing images, it is important to understand how you can alter the dimensions of an image; imagine that you had designed a web page to include an image that is 300 pixels wide by 150 pixels tall:
+
+=> ONLINE EXTRAS
+=> Visit the tools section of the website accompanying this book to watch a video guide to resizing images in Photoshop and GIMP.
+
+=> REDUCING IMAGE SIZE
+                   You can reduce the size of images to create a smaller version of the image.
+    EXAMPLE: If your image is 600 pixels wide and 300 pixels tall, you can reduce the size of the image by 50%.
+    RESULT: This will create an image that is quicker to download.
+
+=> INCREASING IMAGE SIZE
+                   You can't increase the size of photos significantly without affecting the image quality.
+    EXAMPLE: If your image is only 100 pixels wide by 50 pixels tall, increasing the size by 300% would result in poor quality.
+    RESULT: The image will look blurry or blocky
+
+=> CHANGING SHAPE
+                   Only some images can be cropped without losing valuable information (see cropping images file).
+    EXAMPLE: If your image is 300 pixels square, you can remove parts of it, but in doing so you might lose valuable information.
+    RESULT: Only some images can be cropped and still make sense.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+CROPPING IMAGES:
+
+=> You can see on Cropping Images Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+IMAGE RESOLUTION:
+
+=> You can see on Image Resolution Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+VECTOR IMAGES:
+
+You can see on Vector Images Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ANIMATED GIFS:
+
+=> You can see on Animated GIFS Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+TRANSPARENCY:
+
+=> You can see on Transparency Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+EXAMINING IMAGES ON THE WEB:
+
+=> You can see on Examining Images On Web Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: FIGURE AND FIGURE CAPTION:
+
+=> <figure>
+=> Images often come with captions. HTML5 has introduced a new <figure> element to contain images and their caption so that the two are associated.
+=> You can have more than one image inside the <figure> element as long as they all share the same caption.
+
+=> <figcaption>
+=> The <figcaption> element has been added to HTML5 in order to allow web page authors to add a caption to an image.
+=> Before these elements were created there was no way to associate an <img> element with its caption.
+NOTE:Older browsers that do not understand HTML5 elements simply ignore the new elements and display the content of them.
