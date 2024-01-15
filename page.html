@@ -5,123 +5,203 @@
 </head>
 
 <body>
-  <!-- ADDING IMAGES -->
-  <h1>ADDING IMAGES</h1>
-  <img src="images/quokka.jpg" alt="A family of
- quokka" title="The quokka is an Australian
- marsupial that is similar in size to the
- domestic cat." /><br /><br />
-  <hr />
-  <br />
+  <!-- BASIC TABLE STRUCTURE-->
+  <h2>BASIC TABLE STRUCTURE</h2>
+  <table>
+    <tr>
+      <td>15</td>
+      <td>15</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>60</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+  </table>
 
-  <!-- HEIGHT & WIDTH OF IMAGES -->
-  <h1>HEIGHT & WIDTH OF IMAGES</h1>
-  <img src="images/quokka.jpg" alt="A family of
- quokka" width="600" height="450" /><br /><br />
-  <hr />
-  <br />
+  <!-- TABLE HEADINGS -->
+  <h2>TABLE HEADINGS</h2>
+  <table>
+    <tr>
+      <th></th>
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+      <th scope="row">Tickets sold:</th>
+      <td>120</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th scope="row">Total sales:</th>
+      <td>$600</td>
+      <td>$675</td>
+    </tr>
+  </table>
 
-  <!-- WHERE TO PLACE IMAGES -->
-  <h1>WHERE TO PLACE IMAGES</h1>
-  <img src="images/bird.gif" alt="Bird" width="100" height="100" />
-  <p>
-    There are around 10,000 living species of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic. Many species undertake long
-    distance annual migrations, and many more perform shorter irregular
-    journeys.
-  </p>
-  <hr />
-  <p>
-    <img src="images/bird.gif" alt="Bird" width="100" height="100" />There are
-    around 10,000 living species of birds that inhabit different ecosystems
-    from the Arctic to the Antarctic. Many species undertake long distance
-    annual migrations, and many more perform shorter irregular journeys.
-  </p>
-  <hr />
-  <p>
-    There are around 10,000 living species of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic.<img src="images/bird.gif" alt="Bird" width="100" height="100" />Many
-    species undertake long distance annual migrations, and many more
-    perform shorter irregular journeys.
-  </p>
-  <br /><br />
-  <hr />
-  <br />
+  <!-- SPANNING COLUMNS -->
+  <h2>SPANNING COLUMNS</h2>
+  <table>
+    <tr>
+      <th></th>
+      <th>9am</th>
+      <th>10am</th>
+      <th>11am</th>
+      <th>12am</th>
+    </tr>
+    <tr>
+      <th>Monday</th>
+      <td colspan="2">Geography</td>
+      <td>Math</td>
+      <td>Art</td>
+    </tr>
+    <tr>
+      <th>Tuesday</th>
+      <td colspan="3">Gym</td>
+      <td>Home Ec</td>
+    </tr>
+  </table>
 
-  <!-- ALIGNING IMAGES HORIZONTALLY -->
-  <h1>ALIGNING IMAGES HORIZONTALLY</h1>
-  <p>
-    <img src="images/bird.gif" alt="Bird" width="100" height="100" align="left" />There are around 10,000 living species
-    of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic. Many species undertake long
-    distance annual migrations, and many more perform shorter irregular
-    journeys.
-  </p>
-  <hr />
-  <p>
-    <img src="images/bird.gif" alt="Bird" width="100" height="100" align="right" />There are around 10,000 living
-    species of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic. Many species undertake long
-    distance annual migrations, and many more perform shorter irregular
-    journeys.
-  </p><br /><br />
-  <hr />
-  <br />
+  <!-- SPANNING ROWS -->
+  <h2>SPANNING ROWS</h2>
+  <table>
+    <tr>
+      <th></th>
+      <th>ABC</th>
+      <th>BBC</th>
+      <th>CNN</th>
+    </tr>
+    <tr>
+      <th>6pm - 7pm</th>
+      <td rowspan="2">Movie</td>
+      <td>Comedy</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>7pm - 8pm</th>
+      <td>Sport</td>
+      <td>Current Affairs</td>
+    </tr>
+  </table>
 
-  <!-- ALIGNING IMAGES VERTICALLY -->
-  <h1>ALIGNING IMAGES VERTICALLY</h1>
-  <p>
-    <img src="images/bird.gif" alt="Bird" width="100" height="100" align="top" />There are around 10,000 living species
-    of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic. Many species undertake long
-    distance annual migrations, and many more perform shorter irregular
-    journeys.
-  </p>
-  <hr />
-  <p>
-    <img src="images/bird.gif" alt="Bird" width="100" height="100" align="middle" />There are around 10,000 living
-    species of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic. Many species undertake long
-    distance annual migrations, and many more perform shorter irregular
-    journeys.
-  </p>
-  <hr />
-  <p>
-    <img src="images/bird.gif" alt="Bird" width="100" height="100" align="bottom" />There are around 10,000 living
-    species of birds that inhabit different
-    ecosystems from the Arctic to the Antarctic. Many species undertake long
-    distance annual migrations, and many more perform shorter irregular
-    journeys.
-  </p>
+  <!-- LONG TABLES -->
+  <h2>LONG TABLES</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Income</th>
+        <th>Expenditure</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1st January</th>
+        <td>250</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <th>2nd January</th>
+        <td>285</td>
+        <td>48</td>
+      </tr>
+      <!-- additional rows as above -->
+      <tr>
+        <th>31st January</th>
+        <td>129</td>
+        <td>64</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td>7824</td>
+        <td>1241</td>
+      </tr>
+    </tfoot>
+  </table>
 
-  <!-- HTML5: FIGURE AND FIGURE CAPTION -->
-  <figure>
-    <img src="images/otters.jpg" alt="Photograph of
-       two sea otters floating in water">
-    <br />
-    <figcaption>Sea otters hold hands when they
-      sleep so they don't drift away from each
-      other.</figcaption>
-  </figure>
+  <!-- OLD CODE: WIDTH & SPACING -->
+  <h2>OLD CODE: WIDTH & SPACING</h2>
+  <table width="400" cellpadding="10" cellspacing="5">
+    <tr>
+      <th width="150"></th>
+      <th>Withdrawn</th>
+      <th>Credit</th>
+      <th width="150">Balance</th>
+    </tr>
+    <tr>
+      <th>January</th>
+      <td>250.00</td>
+      <td>660.50</td>
+      <td>410.50</td>
+    </tr>
+    <tr>
+      <th>February</th>
+      <td>135.55</td>
+      <td>895.20</td>
+      <td>1170.15</td>
+    </tr>
+  </table>
 
-  <!-- EXAMPLE OF IMAGE ELEMENTS UNDERSTAND IN 5TH CHAPTER--> <br />
+  <!-- OLD CODE: BORDER & BACKGROUND -->
+  <h2>OLD CODE: BORDER & BACKGROUND</h2>
+  <table border="2" bgcolor="#efefef">
+    <tr>
+      <th width="150"></th>
+      <th>Withdrawn</th>
+      <th>Credit</th>
+      <th width="150" bgcolor="#cccccc">Balance</th>
+    </tr>
+    <tr>
+      <th>January</th>
+      <td>250.00</td>
+      <td>660.50</td>
+      <td bgcolor="#cccccc">410.50</td>
+    </tr>
+    <tr>
+      <th>February</th>
+      <td>135.55</td>
+      <td>895.20</td>
+      <td bgcolor="#cccccc">1170.15</td>
+    </tr>
+  </table>
 
-  <figure>
-    <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="Chocolate Islands Individual Cakes" />
-    <p>
-    <figcaption>
-      This recipe for individual chocolate
-      cakes is so simple and so delectable!
-    </figcaption>
-    </p>
-  </figure>
-  <h4>More Recipes:</h4>
-  <p>
-    <img src="images/lemon-posset.jpg" alt="Lemon Posset" title="Lemon Posset Dessert" />
-    <img src="images/roasted-brussel-sprouts.jpg" alt="Roasted Brussel Sprouts"
-      title="Roasted Brussel Sprouts Side Dish" />
-    <img src="images/zucchini-cake.jpg" alt="Zucchini Cake" title="Zucchini Cake No Frosting" />
-  </p>
+  <!-- EXAMPLE OF TABLE ELEMENTS UNDERSTAND IN 6TH CHAPTER--> <br />
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th scope="col">Home starter hosting</th>
+        <th scope="col">Premium business hosting</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Disk space</th>
+        <td>250mb</td>
+        <td>1gb</td>
+      </tr>
+      <tr>
+        <th scope="row">Bandwidth</th>
+        <td>5gb per month</td>
+        <td>50gb per month</td>
+      </tr>
+      <!-- more rows like the two above here -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td colspan="2">Sign up now and save 10%!</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 
 </html>
