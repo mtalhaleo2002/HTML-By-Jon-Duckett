@@ -1,0 +1,211 @@
+FLASH, AUDIO & VIDEO
+
+SUMMARY:
+=> Flash allows you to add animations, video and audio to the web.
+=> Flash is not supported on iPhone or iPad.
+=> HTML5 introduces new <video> and <audio> elements for adding video and audio to web pages, but these are only supported in the latest browsers.
+=> Browsers that support the HTML5 elements do not all support the same video and audio formats, so you need to supply your files in different formats to ensure that everyone can see/hear them.
+
+KEYPOINTS:
+=> How to use Flash in your web pages.
+=> How to use HTML5 <video> and <audio> elements.
+=> When to host your own video and audio and when to use a service such as YouTube.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HOW FLASH WORKS:
+=> You can see on How Flash Works Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+USE OF FLASH:
+=> You can see on How Use Of Flash Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+TIMELINE: FLASH, VIDEO & AUDIO:
+=> You can see on Timeline; Flash,Video & Audio(1) Picture.
+=> You can see on Timeline; Flash,Video & Audio(2) Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ADDING A FLASH MOVIE TO YOUR WEB PAGE:
+
+=> The most popular way of adding Flash into a web page is using JavaScript. There are several scripts that allow you to do this without an in-depth understanding of the JavaScript language.
+=> The script we will be looking at here is called SWFObject. You can obtain a copy of it for free from Google, and you can see how we use it on the next page.
+=> One advantage to using this technique is that it allows browsers to show alternative content for users whose browsers are not capable of showing Flash.
+=> This technique uses a <div> element to create a space where the Flash movie should sit. The <div> element has an id attribute whose value is used by the SWFObject script. In this example, the value of the id attribute is bird.
+=> Inside the <div> element you can place the alternative content for users who are not able to play Flash.
+=> The SWFObject script will check to see if the user's browser can play the Flash movie. If it can, the script will replace the content of the <div> with the .swf file.
+=> For users who cannot see the Flash movie, you could show a still from the movie instead. You might also like to consider using a text description of the Flash file.
+
+=> If you use a text description as alternative content, then you can achieve two further benefits:
+=> 1. The text can be accessed by those with visual and/or physical impairments who are not able to interact with the Flash file.
+=> 2. The text can be indexed by search engines (which are not as effective at indexing SWF files), increasing the chance that your content will be found.
+
+=> In this example, the SWFObject script is hosted on Google's servers. We include the script in this web page using the first of the two <script> elements.
+=> The type attribute is used on the <script> element to indicate that the script inside is written in JavaScript. The src attribute tells the browser where to find the script.
+
+=> The second <script> element is used to tell the browser about the Flash movie, as well as which element it should replace. This element is actually telling the SWFObject script five pieces of information, which are in the brackets:
+
+=> 1. The location of the .swf file: flash/bird.swf
+
+=> 2. The element that the Flash movie should replace, specified by the value of the id attribute on the <div> element:
+=> bird
+
+=> 3. The width of the Flash movie:
+=> 400 px
+
+=> 4. The height of the Flash movie:
+=> 300 px
+
+=> 5. The minimum version of the Flash player needed to view the movie:
+=> Flash Player 8
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+UNDERSTANDING VIDEO FORMATS AND PLAYERS:
+=> You can see on Understanding Video Formats And Players Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+USING HOSTED VIDEO SERVICES:
+=> You can see on Using Hosted Video Services Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+PREPARING A FLASH VIDEO FOR YOUR SITE:
+=> You can see on Preparing A Flash Video For Your Site Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ADDING A FLASH VIDEO TO YOUR PAGES:
+=> You can see on Adding A Flash Video To Your Pages Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: PREPARING VIDEOS FOR YOUR PAGES:
+=> You can see on HTML5: Preparing Video For Your Pages Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: ADDING VIDEOS TO YOUR PAGES:
+
+
+=> <video>
+=> The <video> element has a number of attributes which allow you to control video playback:
+
+    src
+    This attribute specifies the path to the video. (The example video is in H264 format so it will only work in IE and Safari.)
+
+    poster
+    This attribute allows you to specify an image to show while the video is downloading or until the user tells the video to play.
+
+    width, height
+    These attributes specify the size of the player in pixels.
+
+    controls
+    When used, this attribute indicates that the browser should supply its own controls for playback.
+
+    autoplay
+    When used, this attribute specifies that the file should play automatically.
+
+    loop
+    When used, this attribute indicates that the video should start playing again once it has ended.
+
+    preload
+    This attribute tells the browser what to do when the page loads. It can have one of three values:
+
+         none
+         The browser should not load the video until the user presses play.
+
+         auto
+         The browser should download the video when the page loads.
+
+         metadata
+         The browser should just collect information such as the size, first frame, track list, and duration.
+
+NOTE:
+=> In HTML5 you do not need to supply values for all attributes, such as the controls, autoplay, and loop attributes used with the <video> element. These attributes are like on/ off switches. If the attribute is present, it turns that option on. If the attribute is omitted, the option is turned off.
+=> If the browser does not support the <video> element or the format of video used, it will display whatever is between the opening <video> and closing </video> tags.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: MULTIPLE VIDEO SOURCES:
+
+=> <source>
+=> To specify the location of the file to be played, you can use the <source> element inside the <video> element. (This should replace the src attribute on the opening <video> tag.)
+=> You can also use multiple <source> elements to specify that the video is available in different formats.
+=> (Due to a bug on the iPad, you should provide the MP4 video as the first format. Otherwise, it might not play.)
+
+=> src
+=> This attribute specifies the path to the video.
+
+=> type
+=> You should use this attribute to tell the browser what format the video is. Otherwise, it will download some of the video to see if it can play the file (which will take time and bandwidth).
+
+=> codecs
+=> The codec that was used to encode the video is supplied within the type attribute. Note the use of single quotes, as well as double quotes in the type attribute, when it is supplied.
+
+NOTE:
+=> If the browser does not support the <video> element or the format of video used, it will display whatever is between the opening <video> and closing </video> tags.
+
+ONLINE EXTRA:
+=> We have provided links to tools that help you encode videos and audio into the correct formats in the Tools section of the website.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: COMBINING FLASH & HTML5 VIDEO:
+=> You can see on HTML5: Combining Flash & HTML5 Video Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ADDING AUDIO to WEB PAGES:
+=> You can see on Adding Audio to Web Pages Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ADDING A FLASH MP3 PLAYER:
+=> You can see on Adding A Flash MP3 Player Picture.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: ADDING HTML5 AUDIO TO YOUR PAGES:
+
+=> <audio>
+=> HTML5 introduced the <audio> element to include audio files in your pages. As with HTML5 video, browsers expect different formats for the audio.
+=> The <audio> element has a number of attributes which allow you to control audio playback:
+
+=> src
+=> This attribute specifies the path to the audio file.
+
+=> controls
+=> This attribute indicates whether the player should display controls. If you do not use this attribute, no controls will be shown by default. You can also specify your own controls using JavaScript.
+
+=> autoplay
+=> The presence of this attribute indicates that the audio should start playing automatically. (It is considered better practice to let visitors choose to play audio.)
+
+=> preload
+=> This attribute indicates what the browser should do if the player is not set to autoplay. It can have the same values we saw on previous topic for the <video> element.
+
+=> loop
+=> This attribute specifies that the audio track should play again once it has finished.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML5: MULTIPLE AUDIO SOURCES:
+
+=> <source>
+=> It is possible to specify more than one audio file using the <source> element between the opening <audio> and closing </audio> tags (instead of the src attribute on the opening <audio> tag).
+=> This is important because different browsers support different formats for audio files. MP3: Safari 5+, Chrome 6+, IE9 Ogg Vorbis: Firefox 3.6, Chome 6, Opera 1.5, IE9
+=> So you would need to supply two audio formats to get coverage across all recent browsers that support the <audio> element. You could also provide a Flash alternative for older browsers that do not support the <audio> element.
+
+=> src
+=> The <source> element uses the src attribute to indicate where the audio file is located.
+
+=> type
+=> At the time of writing, the type attribute was not commonly being used on the <source> element in the same way it was for the <video> element.
+
+NOTE:
+=> The HTML5 <audio> tag has not gained as widespread adoption as the <video> tag, and there have been some issues with audio quality in the first browsers to implement it.
+
